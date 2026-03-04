@@ -1,0 +1,409 @@
+/* Reset e Estilos Globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+  font-size: 1.2em;
+  color: #ffb700;
+}
+
+/* Navegação */
+nav {
+  background-color: #0f3460;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+nav a:hover {
+  background-color: #ffb700;
+  color: #0f3460;
+}
+
+/* Seções Gerais */
+section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #1a1a2e;
+  border-bottom: 3px solid #ffb700;
+  padding-bottom: 15px;
+}
+
+/* Banner Principal */
+#inicio {
+  background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+  color: white;
+  padding: 60px 40px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+#inicio h2 {
+  border-bottom: 3px solid #ffb700;
+  color: #ffb700;
+  font-size: 2.8em;
+}
+
+#inicio p {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+#inicio a {
+  display: inline-block;
+  background-color: #ffb700;
+  color: #1a1a2e;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+  font-size: 1.1em;
+}
+
+#inicio a:hover {
+  background-color: #e6a500;
+  transform: translateY(-2px);
+}
+
+/* Categorias */
+#categorias ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+#categorias li {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border-left: 4px solid #ffb700;
+}
+
+#categorias li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#categorias h3 {
+  color: #1a1a2e;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+#categorias p {
+  color: #666;
+  font-size: 0.95em;
+}
+
+/* Produtos */
+#produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+#produtos > h2 {
+  grid-column: 1 / -1;
+}
+
+article {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+article h3 {
+  color: #1a1a2e;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+article p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+article strong {
+  color: #0f3460;
+}
+
+article ul {
+  list-style: none;
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+article li {
+  color: #666;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 20px;
+}
+
+article li:before {
+  content: "▸";
+  color: #ffb700;
+  position: absolute;
+  left: 0;
+}
+
+article button {
+  background-color: #ffb700;
+  color: #1a1a2e;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: auto;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+article button:hover {
+  background-color: #e6a500;
+  transform: scale(1.05);
+}
+
+/* Promoções */
+#promocoes {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #ffb700;
+}
+
+#promocoes h3 {
+  color: #1a1a2e;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+#promocoes h3:first-of-type {
+  margin-top: 0;
+}
+
+#promocoes p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Sobre */
+#sobre {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#sobre p {
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  padding: 40px 20px;
+  margin-top: 60px;
+  border-top: 3px solid #ffb700;
+}
+
+footer h2,
+footer h3 {
+  color: #ffb700;
+  margin-bottom: 15px;
+}
+
+footer p {
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+footer div {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #0f3460;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: #ffb700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+footer > p:last-child {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #0f3460;
+  color: #999;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav a {
+    padding: 12px 15px;
+    text-align: left;
+  }
+
+  section h2 {
+    font-size: 2em;
+  }
+
+  #inicio h2 {
+    font-size: 2em;
+  }
+
+  #inicio p {
+    font-size: 1em;
+  }
+
+  #categorias ul,
+  #produtos {
+    grid-template-columns: 1fr;
+  }
+
+  article button {
+    padding: 10px 15px;
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  section h2 {
+    font-size: 1.5em;
+  }
+
+  #inicio {
+    padding: 30px 20px;
+  }
+
+  nav a {
+    padding: 10px 12px;
+    font-size: 0.9em;
+  }
+
+  article {
+    padding: 15px;
+  }
+
+  #promocoes,
+  #sobre {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}
